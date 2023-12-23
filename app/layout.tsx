@@ -1,18 +1,17 @@
-import Footer from "@/components/footer";
-// import Header from "@/components/header";
-import ThemeSwitch from "@/components/theme-switch";
-import ActiveSectionContextProvider from "@/context/active-section-context";
-import ThemeContextProvider from "@/context/theme-context";
-import { Inter } from "next/font/google";
-import { Toaster } from "react-hot-toast";
+import Header from "@/components/header";
 import "./globals.css";
+import { Inter } from "next/font/google";
+import ActiveSectionContextProvider from "@/context/active-section-context";
+import Footer from "@/components/footer";
+import ThemeSwitch from "@/components/theme-switch";
+import ThemeContextProvider from "@/context/theme-context";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Md Tanvir Ahamed Shanto | Personal Portfolio",
-  description:
-    "Md Tanvir Ahamed Shanto is a full-stack developer with 1 years of experience.",
+  title: "Ricardo | Personal Portfolio",
+  description: "Ricardo is a full-stack developer with 8 years of experience.",
 };
 
 export default function RootLayout({
@@ -30,7 +29,7 @@ export default function RootLayout({
 
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
-            {/* <Header /> */}
+            <Header />
             {children}
             <Footer />
 
