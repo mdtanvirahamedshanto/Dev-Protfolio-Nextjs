@@ -1,9 +1,9 @@
 "use client";
 
-import { useRef } from "react";
 import { projectsData } from "@/lib/data";
-import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Image from "next/image";
+import { useRef } from "react";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -12,6 +12,8 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  live,
+  code,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -46,6 +48,18 @@ export default function Project({
               </li>
             ))}
           </ul>
+          <div className="pt-4 flex flex-row justify-between">
+            <a href={live}>
+              <button className="bg-blue-950 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">
+                Live
+              </button>
+            </a>
+            <a href={code}>
+              <button className="bg-blue-950 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">
+                Code
+              </button>
+            </a>
+          </div>
         </div>
 
         <Image
