@@ -3,7 +3,8 @@ import weatherImg from "@/public/weather.png";
 // import wordanalyticsImg from "@/public/wordanalytics.png";
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaHtml5 } from "react-icons/fa";
+import { FaHtml5, FaTools } from "react-icons/fa";
+import { FaCode } from "react-icons/fa6";
 import { LuGraduationCap } from "react-icons/lu";
 
 // Skills...
@@ -18,16 +19,16 @@ export const links = [
     hash: "#about",
   },
   {
-    name: "Projects",
-    hash: "#projects",
-  },
-  {
     name: "Skills",
     hash: "#skills",
   },
   {
     name: "Experience",
     hash: "#experience",
+  },
+  {
+    name: "Projects",
+    hash: "#projects",
   },
   {
     name: "Contact",
@@ -95,27 +96,8 @@ export const projectsData = [
   // },
 ] as const;
 
-export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "Express",
-  "PostgreSQL",
-  "Framer Motion",
-] as const;
-
 export const skills = [
   {
-    // icon: "text-blue-accent-700 text-4xl fab fa-html5",
     icon: React.createElement(FaHtml5),
     title: "FrontEnd",
     skills: [
@@ -126,7 +108,6 @@ export const skills = [
       "Redux",
       "NextJs",
       "TailwindCSS",
-      "Bootstrap",
       "jQuery",
       "OAuth2",
       "APIs",
@@ -134,25 +115,21 @@ export const skills = [
     ],
   },
   {
-    icon: "text-blue-accent-700 text-4xl fa-solid fa-code",
+    icon: React.createElement(FaCode),
     title: "BackEnd",
     skills: [
       "NodeJS",
       "Express",
       "MySQL",
-      "Sequelize",
       "MongoDB",
       "Mongoose",
-      "GraphQL",
-      "Apollo",
       "RestAPI",
       "Python",
-      "Java/SpringBoot",
-      "Spring Security",
+      "Sequelize",
     ],
   },
   {
-    icon: "text-blue-accent-700 text-4xl fa-solid fa-screwdriver-wrench",
+    icon: React.createElement(FaTools),
     title: "Tools",
     skills: [
       "Git",
@@ -163,10 +140,7 @@ export const skills = [
       "Postman",
       "Webpack",
       "TypeScript",
-      "Jest",
-      "Scrum Board",
       "SEO",
-      "IntelliJ",
     ],
   },
-];
+] as const;
