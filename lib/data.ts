@@ -72,7 +72,7 @@ export const projectsData = [
     title: "Alarm Clock",
     description:
       " Feature- Analog Clock  Digital Clock  Date: day--Year--Month  Set Alarm  Eyes moving on mousemove event",
-    tags: ["React", "React Context", "CSS"],
+    tags: ["React", "React Context", "CSS", "javascript"],
     imageUrl: alarmClockImg,
     live: "https://digitalalarmclockinreact.netlify.app/",
     code: "https://github.com/mdtanvirahamedshanto/Alarm-Clock-in-React",
