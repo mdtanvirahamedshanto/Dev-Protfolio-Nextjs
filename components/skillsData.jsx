@@ -4,7 +4,7 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
+      className="px-4 py-16 mx-auto sm:max-w-[36rem] md:max-w-full lg:max-w-[1280px] md:px-24 lg:px-8 lg:py-20"
     >
       <div className="max-w-xl mb-10 md:mx-auto text-center lg:max-w-2xl md:mb-12">
         <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
@@ -25,14 +25,16 @@ const Skills = () => {
           <h6 className="mb-2 font-semibold leading-5 border-b-2 pb-4">
             {skill.title}
           </h6>
+          <span className="flex flex-wrap space-x-2 mt-5">
           {skill.skills.map((item, index) => (
             <p
               key={index}
-              className="max-w-md mb-3 text-sm text-gray-900 mx-auto"
+              className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full"
             >
               {item}
             </p>
           ))}
+          </span>
         </div>
         ))}
       </div>
