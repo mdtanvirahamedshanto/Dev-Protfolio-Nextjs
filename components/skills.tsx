@@ -42,9 +42,9 @@ export default function Skills() {
         <div className="grid gap-8 row-gap-8 lg:grid-cols-3">
           {skills.map((skill, index) => (
             <div key={index} className="text-center">
-              <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50 mx-auto sm:w-24 sm:h-24 dark:bg-gray-900">
+              <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50 mx-auto sm:w-24 sm:h-24  dark:bg-[#173961] ">
                 <motion.i
-                  className=" text-4xl text-blue-700"
+                  className=" text-4xl text-blue-700 dark:text-white/60"
                   aria-hidden="true"
                   initial={{ opacity: 0, scale: 0 }}
                   animate={{ opacity: 1, scale: 1 }}
@@ -63,11 +63,11 @@ export default function Skills() {
               >
                 {skill.title}
               </motion.h6>
-              <span className="flex flex-wrap space-x-2 mt-5">
+              <span className="flex flex-wrap justify-center space-x-2 mt-5">
                 {skill.skills.map((item, index) => (
                   <motion.p
                     key={index}
-                    className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full dark:text-white/70 dark:bg-gray-500"
+                    className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-800 bg-gray-200 rounded-full dark:text-white/70 dark:bg-[#173961]"
                     // "bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
                     variants={fadeInAnimationVariants}
                     initial="initial"
