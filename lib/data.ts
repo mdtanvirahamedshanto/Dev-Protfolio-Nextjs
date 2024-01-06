@@ -141,6 +141,7 @@ export const skills = [
       "Webpack",
       "TypeScript",
       "SEO",
+      "Vercel",
     ],
   },
 ] as const;
