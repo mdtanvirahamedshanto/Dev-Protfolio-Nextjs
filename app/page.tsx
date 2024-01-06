@@ -1,3 +1,4 @@
+import GoToTheTop from "@/components/GoToTheTop";
 import About from "@/components/about";
 import Contact from "@/components/contact";
 import Experience from "@/components/experience";
@@ -12,10 +13,11 @@ export default function Home() {
       <Intro />
       <SectionDivider />
       <About />
-      <Projects />
       <Skills />
       <Experience />
+      <Projects />
       <Contact />
+      <GoToTheTop />
     </main>
   );
 }

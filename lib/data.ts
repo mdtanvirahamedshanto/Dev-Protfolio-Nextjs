@@ -3,6 +3,8 @@ import weatherImg from "@/public/weather.png";
 // import wordanalyticsImg from "@/public/wordanalytics.png";
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
+import { FaHtml5, FaTools } from "react-icons/fa";
+import { FaCode } from "react-icons/fa6";
 import { LuGraduationCap } from "react-icons/lu";
 
 // Skills...
@@ -17,16 +19,16 @@ export const links = [
     hash: "#about",
   },
   {
-    name: "Projects",
-    hash: "#projects",
-  },
-  {
     name: "Skills",
     hash: "#skills",
   },
   {
     name: "Experience",
     hash: "#experience",
+  },
+  {
+    name: "Projects",
+    hash: "#projects",
   },
   {
     name: "Contact",
@@ -94,20 +96,51 @@ export const projectsData = [
   // },
 ] as const;
 
-export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "Express",
-  "PostgreSQL",
-  "Framer Motion",
+export const skills = [
+  {
+    icon: React.createElement(FaHtml5),
+    title: "FrontEnd",
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Redux",
+      "NextJs",
+      "TailwindCSS",
+      "jQuery",
+      "OAuth2",
+      "APIs",
+      "MaterialUI",
+    ],
+  },
+  {
+    icon: React.createElement(FaCode),
+    title: "BackEnd",
+    skills: [
+      "NodeJS",
+      "Express",
+      "MySQL",
+      "MongoDB",
+      "Mongoose",
+      "RestAPI",
+      "Python",
+      "Sequelize",
+    ],
+  },
+  {
+    icon: React.createElement(FaTools),
+    title: "Tools",
+    skills: [
+      "Git",
+      "GitHub",
+      "Heroku",
+      "Netlify",
+      "VSCode",
+      "Postman",
+      "Webpack",
+      "TypeScript",
+      "SEO",
+    ],
+  },
 ] as const;
