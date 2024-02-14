@@ -145,3 +145,32 @@ export const skills = [
     ],
   },
 ] as const;
+
+export const allProjectsData = [
+  {
+    title: "Alarm Clock",
+    description:
+      " Feature- Analog Clock  Digital Clock  Date: day--Year--Month  Set Alarm  Eyes moving on mousemove event",
+    tags: ["React", "React Context", "CSS", "javascript"],
+    imageUrl: alarmClockImg,
+    live: "https://digitalalarmclockinreact.netlify.app/",
+    code: "https://github.com/mdtanvirahamedshanto/Alarm-Clock-in-React",
+  },
+  {
+    title: "Weather App",
+    description: "A Simple Weather App , Show Current Weather in details.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    imageUrl: weatherImg,
+    live: "https://weatherwebsitebyshanto.netlify.app/",
+    code: "https://github.com/mdtanvirahamedshanto/Weather-Website",
+  },
+  // {
+  //   title: "Word Analytics",
+  //   description:
+  //     "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+  //   tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+  //   imageUrl: wordanalyticsImg,
+  //   live: "https://www.facebook.com",
+  //   code: "https://www.github.com/mdtanvirahamedshanto",
+  // },
+];
