@@ -1,3 +1,4 @@
+import FacebookMsg from "@/components/FacebookMsg";
 import GoToTheTop from "@/components/GoToTheTop";
 import About from "@/components/about";
 import Contact from "@/components/contact";
@@ -18,6 +19,7 @@ export default function Home() {
       <Projects />
       <Contact />
       <GoToTheTop />
+      <FacebookMsg />
     </main>
   );
 }
