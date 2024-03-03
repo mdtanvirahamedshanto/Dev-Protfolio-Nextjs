@@ -1,14 +1,14 @@
 "use client";
 
-import { allProjectsData } from "@/lib/data";
-// import { projectsData } from "@/lib/data";
+import { daynamicProject } from "@/lib/projectData";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
 import { FaCode } from "react-icons/fa6";
 import { HiGlobeAlt } from "react-icons/hi";
 
-type ProjectProps = (typeof allProjectsData)[number];
+type ProjectProps = (typeof daynamicProject)[number];
+// type ProjectProps = (typeof staticProject)[number];
 
 export default function AllProject({
   title,
