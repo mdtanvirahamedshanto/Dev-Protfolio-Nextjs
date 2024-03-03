@@ -19,6 +19,14 @@ export default function Projects() {
           </React.Fragment>
         ))}
       </div>
+      <div className="flex justify-center mt-4">
+        <a
+          className=" dark:bg-blue-950 bg-blue-400 dark:hover:bg-green-950 hover:bg-green-400 flex justify-center w-24 text-center items-center rounded-md h-10"
+          href="/projects"
+        >
+          See All
+        </a>
+      </div>
     </section>
   );
 }
