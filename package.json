@@ -1,7 +1,18 @@
 {
-  "name": "portfolio",
+  "name": "dev-portfolio",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Md Tanvir Ahamed Shanto",
+    "email": "mdtanvirahamedshanto@gmail.com",
+    "url": "https://github.com/mdtanvirahamedshanto/Dev-Protfolio-Nextjs"
+  },
+  "keywords": [
+    "nextjs portfolio",
+    "react portfolio",
+    "portfolio",
+    "best-portfolio"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
