@@ -1,4 +1,3 @@
-import FacebookMsg from "@/components/FacebookMsg";
 import GoToTheTop from "@/components/GoToTheTop";
 import About from "@/components/about";
 import Contact from "@/components/contact";
@@ -9,6 +8,12 @@ import Intro from "@/components/intro";
 import Projects from "@/components/projects";
 import SectionDivider from "@/components/section-divider";
 import Skills from "@/components/skills";
+
+export const metadata = {
+  title: "Md Tanvir Ahamed Shanto | Personal Portfolio",
+  description:
+    "Md Tanvir Ahamed Shanto is a full-stack developer with 1 years of experience.",
+};
 
 export default function Home() {
   return (
@@ -22,7 +27,6 @@ export default function Home() {
       <Projects />
       <Contact />
       <GoToTheTop />
-      <FacebookMsg />
       <Footer />
     </main>
   );

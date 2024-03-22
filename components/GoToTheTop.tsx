@@ -25,7 +25,7 @@ const GoToTheTop = () => {
   }, []);
 
   return (
-    <div className="fixed bottom-25 mobile:top-40 right-5">
+    <div className="fixed mobile:bottom-10 right-5">
       {isVisible && (
         <div
           onClick={scrollToTop}

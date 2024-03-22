@@ -7,12 +7,6 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Md Tanvir Ahamed Shanto | Personal Portfolio",
-  description:
-    "Md Tanvir Ahamed Shanto is a full-stack developer with 1 years of experience.",
-};
-
 export default function RootLayout({
   children,
 }: {

@@ -1,7 +1,14 @@
 // import AllProjectsD from "@/components/projects/AllProjects";
 // import AllProjectsS from "@/components/projects/AllProjects";
+import GoToTheTop from "@/components/GoToTheTop";
 import { AllProjectsD, AllProjectsS } from "@/components/projects/AllProjects";
 import HeaderProject from "@/components/projects/HeaderProject";
+
+export const metadata = {
+  title: "My All Personal Projects | Md Tanvir Ahamed Shanto",
+  description:
+    "Md Tanvir Ahamed Shanto is a full-stack developer with 1 years of experience.",
+};
 
 const page = () => {
   return (
@@ -19,6 +26,7 @@ const page = () => {
           Back to Home
         </a>
       </div>
+      <GoToTheTop />
     </>
   );
 };
