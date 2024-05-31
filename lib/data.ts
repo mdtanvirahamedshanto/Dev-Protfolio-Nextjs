@@ -1,12 +1,10 @@
-import alarmClockImg from "@/public/alarm-clock.png";
-import weatherImg from "@/public/weather.png";
+import Eventry from "@/public/eventry.png";
+import PhootFeed from "@/public/photoFeed.png";
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaHtml5, FaTools } from "react-icons/fa";
 import { FaCode } from "react-icons/fa6";
 import { LuGraduationCap } from "react-icons/lu";
-
-// Skills...
 
 export const links = [
   {
@@ -68,32 +66,26 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Alarm Clock",
+    title: "Eventry Booking App",
     description:
-      " Feature- Analog Clock  Digital Clock  Date: day--Year--Month  Set Alarm  Eyes moving on mousemove event",
-    tags: ["React", "React Context", "CSS", "javascript"],
-    imageUrl: alarmClockImg,
-    live: "https://digitalalarmclockinreact.netlify.app/",
-    code: "https://github.com/mdtanvirahamedshanto/Alarm-Clock-in-React",
+      "A Full Stack MERN Application for booking events. Users can book events, view their bookings, and cancel them.",
+    tags: ["Next.js", "Tailwind Css", "CSS", "javascript"],
+    imageUrl: Eventry,
+    live: "https://project-eventry-nextjs.vercel.app/",
+    code: "https://github.com/mdtanvirahamedshanto/project-eventry-nextjs.git ",
   },
   {
-    title: "Weather App",
-    description: "A Simple Weather App , Show Current Weather in details.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    imageUrl: weatherImg,
-    live: "https://weatherwebsitebyshanto.netlify.app/",
-    code: "https://github.com/mdtanvirahamedshanto/Weather-Website",
+    title: "Photo Feed Website",
+    description:
+      "A simple website that shows photos from an API Emplement Internasolization entercepting routing .",
+    tags: ["Next.js", "Tailwind Css", "JavaScript"],
+    imageUrl: PhootFeed,
+    live: "https://photofeed-nextjs.vercel.app/",
+    code: "https://github.com/mdtanvirahamedshanto/photofeed-nextjs.git",
   },
-  // {
-  //   title: "Word Analytics",
-  //   description:
-  //     "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-  //   tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-  //   imageUrl: wordanalyticsImg,
-  //   live: "https://www.facebook.com",
-  //   code: "https://www.github.com/mdtanvirahamedshanto",
-  // },
 ] as const;
+
+// Skills...
 
 export const skills = [
   {
@@ -123,7 +115,9 @@ export const skills = [
       "Mongoose",
       "RestAPI",
       "Python",
-      "Sequelize",
+      "PostgreSQL",
+      "GraphQL",
+      "Prisma",
     ],
   },
   {
