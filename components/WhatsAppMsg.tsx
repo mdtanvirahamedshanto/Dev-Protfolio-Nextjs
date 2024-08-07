@@ -4,7 +4,7 @@ import { FloatingWhatsApp } from 'react-floating-whatsapp'
 const WhatsAppMsg = () => {
   return (
     <FloatingWhatsApp
-    phoneNumber="01614081441"
+    phoneNumber="+8801614081441"
     accountName="Md Tanvir Ahamed Shanto"
     allowEsc
     allowClickAway
