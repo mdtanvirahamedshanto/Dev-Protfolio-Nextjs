@@ -1,4 +1,5 @@
 import GoToTheTop from "@/components/GoToTheTop";
+import WhatsAppMsg from "@/components/WhatsAppMsg";
 import About from "@/components/about";
 import Contact from "@/components/contact";
 import Experience from "@/components/experience";
@@ -8,7 +9,7 @@ import Intro from "@/components/intro";
 import Projects from "@/components/projects";
 import SectionDivider from "@/components/section-divider";
 import Skills from "@/components/skills";
-
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
 export const metadata = {
   title: "Md Tanvir Ahamed Shanto | Personal Portfolio",
   description:
@@ -28,6 +29,7 @@ export default function Home() {
       <Contact />
       <GoToTheTop />
       <Footer />
+      <WhatsAppMsg />
     </main>
   );
 }

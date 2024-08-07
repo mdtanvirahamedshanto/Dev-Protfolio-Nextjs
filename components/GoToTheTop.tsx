@@ -29,7 +29,7 @@ const GoToTheTop = () => {
       {isVisible && (
         <div
           onClick={scrollToTop}
-          className="transition-all hover:scale-110 flex justify-center items-center bg-white w-[3rem] h-[3rem] rounded-full cursor-pointer shadow-lg border border-slate-300 dark:bg-gray-950 "
+          className="transition-all mb-20 hover:scale-110 flex justify-center items-center bg-white w-[3rem] h-[3rem] rounded-full cursor-pointer shadow-lg border border-slate-300 dark:bg-gray-950 "
         >
           <i className="text-2xl text-blue-accent-700">
             <FaAngleUp />
